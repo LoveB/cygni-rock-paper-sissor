@@ -2,7 +2,7 @@
 
 
 ## Rules of the Game
-Two players compete by sending the word 'rock', 'scissor' or 'paper'. If your word beats the other players word, you win the game. If you send the same word its a tie.
+Two players compete by sending the word 'rock', 'scissor' or 'paper' to the server. If your word wins over the other players word, you win the game. If you send the same word its a tie.
 - rock wins over scissor
 - scissor wins over paper
 - paper wins over rock
