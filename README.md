@@ -41,11 +41,11 @@ The request body:
 'name': 'yourName' 
 }
 ```
-### 2. In the response body you should receive a game id that looks similar to this:
+In the response body you should receive a game id that looks similar to this:
 ```sh
 345b5a9e-2360-49c2-99a3-898a29c8d7b7
 ```
-### 3. Give the id to a friend and and ask her/him to make a POST request to:
+### 2. Give the id to a friend and and ask her/him to make a POST request to:
 ```sh
 http://localhost:4000/api/<place-game-id-here>/join
 ```
@@ -55,7 +55,7 @@ The request body:
 'name': 'yourFriendsName' 
 }
 ```
-### 4. Now make a move by sending a POST request to:
+### 3. Now make a move by sending a POST request to:
 ```sh
 http://localhost:4000/api/<place-game-id-here>/move
 ```
@@ -66,7 +66,7 @@ The request body:
 'move': 'yourMove'
 }
 ```
-### 5. Ask your friend to make a move by sending a POST request to :
+### 4. Ask your friend to make a move by sending a POST request to :
 ```sh
 http://localhost:4000/api/<place-game-id-here>/move
 ```
@@ -77,7 +77,7 @@ The request body:
 'move': 'yourFriendsMove'
 }
 ```
-### 6. Now the game is finished and you can check who won. This is done by sending a GET request to:
+### 5. Now the game is finished and you can check who won. This is done by sending a GET request to:
 ```sh
 http://localhost:4000/api/<place-game-id-here>
 ```
