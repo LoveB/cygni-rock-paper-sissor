@@ -4,7 +4,6 @@ import { gameController } from '../../controllers/index';
 
 const router = express.Router();
 
-// GET request for games
 router.post('/', [check('name').isAlpha()], gameController.startNewGame);
 router.post('/:id/join', [check('name').isAlpha()], gameController.joinGame);
 router.post('/:id/move', [check('name', 'move').isAlpha()], gameController.makeMove);
