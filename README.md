@@ -31,7 +31,7 @@ $ npm run start
 
 ## How to play
 
-1. Open Postman and make a new POST request to:
+### 1. Open Postman and make a new POST request to:
 ```sh
 http://localhost:4000/api/games
 ```
@@ -41,13 +41,13 @@ The request body:
 'name': 'yourName' 
 }
 ```
-2. In the response body you should receive a game id that looks similar to this:
+### 2. In the response body you should receive a game id that looks similar to this:
 ```sh
 345b5a9e-2360-49c2-99a3-898a29c8d7b7
 ```
-3. Give the id to a friend and and ask her/him to make a POST request to:
+### 3. Give the id to a friend and and ask her/him to make a POST request to:
 ```sh
-http://localhost:4000/api/<place game id here>/join
+http://localhost:4000/api/<place-game-id-here>/join
 ```
 The request body:
 ```json
@@ -55,9 +55,9 @@ The request body:
 'name': 'yourFriendsName' 
 }
 ```
-4. Now make a move by sending a POST request to:
+### 4. Now make a move by sending a POST request to:
 ```sh
-http://localhost:4000/api/<place game id here>/move
+http://localhost:4000/api/<place-game-id-here>/move
 ```
 The request body:
 ```json
@@ -66,9 +66,9 @@ The request body:
 'move': 'yourMove'
 }
 ```
-5. Ask your friend to make a move by sending a POST request to :
+### 5. Ask your friend to make a move by sending a POST request to :
 ```sh
-http://localhost:4000/api/<place game id here>/move
+http://localhost:4000/api/<place-game-id-here>/move
 ```
 The request body:
 ```json
@@ -77,9 +77,9 @@ The request body:
 'move': 'yourFriendsMove'
 }
 ```
-6. Now the game is finished and you can check who won. This is done by sending a GET request to:
+### 6. Now the game is finished and you can check who won. This is done by sending a GET request to:
 ```sh
-http://localhost:4000/api/<place game id here>
+http://localhost:4000/api/<place-game-id-here>
 ```
 This status check can be done at any point in the game to also check who has made a move.
 
