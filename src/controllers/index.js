@@ -1,5 +1,5 @@
-import  gameController from './gameController';
+import gameController from './gameController';
 
 export {
-    gameController
+  gameController,
 };
